@@ -1,0 +1,13 @@
+CREATE TABLE homework (
+organized INT,
+understand INT,
+enthusiastic INT,
+learned INT
+);
+
+
+LOAD DATA LOCAL INFILE "C:\\Users\\Matan Maimoni\\Desktop\\CSV\\6829" INTO TABLE homework 
+FIELDS TERMINATED BY  ','
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(organized,understand,enthusiastic,learned);
